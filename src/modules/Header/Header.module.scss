@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg-blue-color);
+  z-index: 9999;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 116px;
+  @media (max-width: 430px) {
+    height: 92px;
+  }
+}
+
+.headerRightEnd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  @media (max-width: 1219px) {
+    gap: 15px;
+  }
+}
+
+.burger {
+  &Btns {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    @media (max-width: 430px) {
+      gap: 20px;
+    }
+  }
+}

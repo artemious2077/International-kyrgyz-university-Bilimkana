@@ -1,0 +1,130 @@
+{
+  "common": {
+    "about_us": "About us",
+    "programs": "Programs",
+    "enrollment_procedure": "Enrollment procedure",
+    "news": "News",
+    "events": "Events",
+    "additional_information": "Additional information",
+    "read_more": "Read more",
+    "close": "Close",
+    "home": "Home",
+    "news_events": "News and events"
+  },
+  "form_modal": {
+    "form": "Application form",
+    "full_name": "Full name",
+    "email": "Email",
+    "date_error": "Enter the date",
+    "phone_error": "Invalid phone number",
+    "email_error": "Please enter a valid email address",
+    "error": "Required field",
+    "date_min": "The date must be at least 1924",
+    "date_max": "Date cannot be in the future",
+    "en_level": "English level",
+    "agreement": "Consent to the processing of your personal data",
+    "send": "Send",
+    "success": "Your application has been successfully completed. We will contact you shortly.",
+    "return": "Return to main page"
+  },
+  "header": {
+    "fill_form": "Fill form",
+    "lms": "Login to lms"
+  },
+  "main_page": {
+    "our_partners": "International education opportunities",
+    "our_latest_news": "Our latest news",
+    "upcoming_events": "Upcoming events",
+    "our_teachers": "Our teachers",
+    "faq": "Frequently Asked Questions"
+  },
+  "about_us_page": {
+    "university_profile": "University profile",
+    "our_history": "Our history",
+    "mission": "Mission",
+    "philosophy": "Philosophy",
+    "why_biu": "Why BIU",
+    "goals": "Goals",
+    "visions": "Visions",
+    "supervisors": "Supervisors"
+  },
+  "programs_page": {
+    "motto": "Join our programs and start your path to new knowledge and opportunities today! We will do our best to make the learning process as convenient and accessible for you as possible."
+  },
+  "additional_info_page": {
+    "intern": "Approach to intern training at BIU:",
+    "achievements": "Our students achievements"
+  },
+  "news_events_page": {
+    "last_news": "Last news",
+    "search": "Search...",
+    "month_year": "Month, year",
+    "not_found": "No results found{{query}}.",
+    "choose_year": "Choose year",
+    "apply": "Apply",
+    "reset": "Reset"
+  },
+  "footer": {
+    "social_media": "Social media",
+    "phone": "Phone:",
+    "address": "Address:",
+    "email": "Email:",
+    "gps": "GPS:"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "not_found_page": {
+    "error": "This is an error",
+    "url": "The requested URL was not found on this server.",
+    "all_we_know": "That's all we know."
+  },
+  "map": {
+    "title": "How to find us?",
+    "popup_title": "Our contacts"
+  },
+  "enrollment": {
+    "readMore": "Read more",
+    "close": "Close",
+    "column": {
+      "point": "Points",
+      "level": "Level",
+      "cef": "CEF scale"
+    },
+    "column1": {
+      "numbersOfPoints": "Less than 30 points "
+    },
+    "column2": {
+      "numbersOfPoints": "31 - 60 points"
+    },
+    "column3": {
+      "numbersOfPoints": "61 - 90 points"
+    },
+    "column4": {
+      "numbersOfPoints": "More than 90 points"
+    },
+    "string": "Chances are, you can:",
+    "string1": "Understand known words and very simple sentences when spoken clearly and slowly. Understand some known words and very simple sentences, e.g. on signs, posters and catalogs. Speak in simple sentences and express their thoughts at a simple level. Write a short postcard or greeting, etc. ",
+    "string2": "Understand very simple information. Understand the most important things in short, clear and simple messages. Find information in simple texts (brochures, menus, transportation schedules) and understand letters of personal correspondence. Express your thoughts in simple situations. Use a few sentences to describe your personal and professional life. Write simple short notes or messages. Write a simple letter of personal correspondence.",
+    "string3": "Understand the main information if it is about work, school, free time. Understand broadcasts if they are spoken clearly. Understand texts from the domestic and professional spheres. Understand letters about events and wishes. Participate in conversations about family, hobbies, work, travel or current events. Write simple texts about famous events. Communicate their impressions, experiences in personal correspondence.",
+    "string4": "Follow the train of thought in long speeches and reports, understand news programs, reports and feature films.Read articles and reports and understand the author's position.Understand contemporary works of literature.Express their thoughts and participate in conversations and discussions with native speakers.Communicate information and formulate arguments in messages."
+  },
+  "levelOptions": {
+    "no": "Don't know",
+    "base": " А1 Elementary",
+    "intermediate": "A2 Beginner",
+    "advanced": "B1 Intermediate / B2 Upper Intermediate",
+    "professional": "C1 Advanced / C2 Proficiency"
+  }
+}

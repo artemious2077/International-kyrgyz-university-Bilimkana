@@ -1,0 +1,28 @@
+.scrollWrapper {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  z-index: 999999;
+  background: none;
+  cursor: default;
+  &:hover {
+    background: none;
+    cursor: default;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .scrollWrapper {
+    display: none;
+  }
+}

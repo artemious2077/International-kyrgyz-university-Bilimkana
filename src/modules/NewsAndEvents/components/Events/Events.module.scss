@@ -1,0 +1,90 @@
+.events {
+  &Header {
+    color: var(--title-black-color);
+  }
+
+  &TopBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--title-black-color);
+    margin-top: 40px;
+  }
+
+  &Box {
+    margin: 40px 0;
+    display: grid;
+    gap: 32px 39px;
+    color: var(--title-black-color);
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 1024px) {
+      column-gap: 17px;
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &Card {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 2px var(--border-grey-color) solid;
+    padding: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+
+    &Content {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex-grow: 1;
+    }
+  }
+
+  &Img {
+    width: 100%;
+    height: 245px;
+    border-radius: 12px;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &Title {
+    line-height: 28.8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &Description {
+    flex-grow: 1;
+    line-height: 25.2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &Date {
+    line-height: 25.2px;
+    color: var(--text-grey-color);
+  }
+
+  &NotFound {
+    word-break: break-word;
+  }
+
+  &ReadBtn {
+    color: var(--only-black);
+  }
+}

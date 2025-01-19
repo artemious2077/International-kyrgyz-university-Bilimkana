@@ -1,0 +1,40 @@
+.mapTitle {
+  margin-top: auto;
+  color: var(--title-black-color);
+  margin-bottom: 40px;
+}
+
+.mapLinks {
+  font-family: Roboto;
+  letter-spacing: 0.4px;
+  a {
+    color: var(--only-white);
+  }
+  img {
+    margin-right: 5px;
+  }
+}
+
+.popupTitle {
+  margin: 0 auto;
+}
+
+.mapContainer {
+  max-width: 1240px;
+  width: 100%;
+  height: 524px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mapTitle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 647px) {
+  .mapTitle {
+    text-align: center;
+  }
+}

@@ -1,0 +1,232 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px !important;
+  @media (max-width: 830px) {
+    margin-bottom: 80px !important;
+  }
+  @media (max-width: 430px) {
+    margin-bottom: 50px !important;
+  }
+}
+
+.frameContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.eventsHeader {
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: var(--title-black-color);
+}
+
+.eventFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 541px;
+  height: 460px;
+  position: relative;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+
+.eventFrameImage {
+  width: 541px;
+  height: 314px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.eventFrameImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventFrameInfoBlock {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 465px;
+  width: 100%;
+  min-height: 212px;
+  padding: 19px 15px !important;
+  border-radius: 8px;
+  border: 1px solid #e1e4ed;
+  background: var(--bg-white-color);
+  box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+  &_title {
+    color: var(--text-black-color);
+    font-weight: 600;
+    font-size: 24px;
+  }
+  &_description {
+    color: var(--text-black-color);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media (max-width: 430px) {
+      text-align: left;
+    }
+  }
+}
+
+.btn {
+  text-decoration: none;
+  & Button {
+    color: var(--only-black);
+  }
+}
+
+.arrow {
+  display: flex;
+  transition: 0.3s;
+}
+
+.btn:hover .arrow {
+  margin-left: 18px !important;
+}
+
+.dateContainer {
+  color: var(--text-black-color);
+  display: flex;
+  max-width: 436px;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.calendarContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .eventsHeader {
+    margin-left: 30px;
+  }
+  .eventFrame {
+    max-width: 339px;
+    width: 100%;
+  }
+  .eventFrameImage {
+    max-width: 339px;
+    width: 100%;
+  }
+
+  .eventFrameInfoBlock {
+    top: 250px;
+    height: 268px;
+    .eventFrameInfoBlock_description {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 18px;
+      font-size: 16px;
+    }
+  }
+  .date:first-child {
+    order: 2;
+    width: 100%;
+  }
+  .date:last-child {
+    order: 1;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  .dateContainer {
+    flex-direction: column;
+  }
+
+  .btn {
+    max-width: 307px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 854px) {
+  .eventFrameInfoBlock {
+    .eventFrameInfoBlock_description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .eventFrameInfoBlock_title {
+    font-size: 22px;
+  }
+  .eventFrameInfoBlock_description {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 753px) {
+  .frameContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .frameContainer {
+    gap: 82px;
+  }
+}
+
+@media (max-width: 647px) {
+  .eventsHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .eventsHeader {
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .eventFrame {
+    max-width: 100%;
+  }
+  .eventFrameImage {
+    max-width: 100%;
+  }
+
+  .eventFrameInfoBlock {
+    height: 230px;
+  }
+}
+
+@media (max-width: 430px) {
+  .eventFrameInfoBlock_title {
+    font-size: 18px;
+  }
+  .eventFrameInfoBlock_description {
+    font-size: 16px !important;
+  }
+}

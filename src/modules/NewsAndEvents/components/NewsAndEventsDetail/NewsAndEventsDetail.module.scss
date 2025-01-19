@@ -1,0 +1,83 @@
+.newsAndEventsDetail {
+  margin-bottom: 140px;
+  word-break: break-word;
+  @media (max-width: 900px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+
+  &Title {
+    color: var(--text-black-color);
+    padding-top: 30px;
+  }
+
+  &Description {
+    margin: 30px 0 40px;
+    color: var(--text-black-color);
+    text-align: justify;
+    @media (max-width: 600px) {
+      text-align: left;
+    }
+  }
+
+  &ImgBox {
+    display: flex;
+    justify-content: center;
+    padding: 0 105px;
+    @media (max-width: 900px) {
+      padding: 0 91px;
+    }
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+
+  &Img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+    @media (max-width: 900px) {
+      height: 350px;
+    }
+    @media (max-width: 600px) {
+      height: 260px;
+    }
+  }
+
+  &Text {
+    margin: 70px 66px;
+    color: var(--text-black-color);
+    text-align: justify;
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 900px) {
+      margin: 50px 0;
+    }
+    @media (max-width: 600px) {
+      margin: 30px 0 50px;
+      text-align: left;
+    }
+  }
+
+  &Description ol, &Description li,
+  &Text ol, &Text li {
+    margin-left: 15px;
+    @media (max-width: 830px) {
+      margin-left: 12px;
+    }
+  }
+
+  &Description ul, &Text ul {
+    margin-left: 10px;
+    @media (max-width: 830px) {
+      margin-left: 8px;
+    }
+  }
+}

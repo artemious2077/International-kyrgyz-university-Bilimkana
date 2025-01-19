@@ -1,0 +1,32 @@
+.logo {
+  display: inline-block;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.headerLogo {
+  width: 84px;
+  height: 76px;
+
+  @media (max-width: 430px) {
+    width: 63px;
+    height: 52px;
+  }
+}
+
+.footerLogo {
+  width: 161px;
+  height: 137px;
+
+  @media (max-width: 932px) {
+    width: 84px;
+    height: 76px;
+  }
+}
+
+.mobileLogo {
+  width: 63px;
+  height: 52px;
+}

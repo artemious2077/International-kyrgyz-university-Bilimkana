@@ -1,0 +1,35 @@
+.wrappers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 57px;
+  margin-bottom: 120px;
+}
+
+.header {
+  margin-bottom: 40px;
+  color: var(--title-black-color);
+}
+
+@media (max-width: 1016px) {
+  .header {
+    text-align: center;
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 430px) {
+  .wrapper {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

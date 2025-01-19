@@ -1,0 +1,259 @@
+.modalBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBox {
+  position: relative;
+  width: 712px;
+  max-height: calc(100vh - 120px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 50px 50px 30px 50px;
+  border-radius: 12px;
+  &__cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    & img {
+      cursor: pointer;
+    }
+  }
+}
+
+.modalWind {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 50px !important;
+  border-radius: 0px 0px 12px 12px;
+  &__header {
+    color: var(--title-color-orange) !important;
+  }
+  &__formInput {
+    color: var(--title-black-color);
+    font-size: 20px;
+    max-width: 612px;
+    width: 100%;
+    height: 38px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #737b7d;
+    outline: none;
+    margin-bottom: 40px;
+    &::placeholder {
+      font-family: Roboto;
+      color: var(--title-black-color);
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 20px !important;
+    border-radius: 12px;
+    background: var(--bg-orange-color);
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 30px;
+    &:hover {
+      background: var(--bg-lightOrange-color);
+    }
+    &:hover .arrow {
+      margin-left: 18px;
+    }
+  }
+  &__title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.54px;
+    color: var(--text-black-color);
+  }
+}
+
+.modalWind__headerLine {
+  transform: translateY(-50%);
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+  background: linear-gradient(to left, #fe7a36);
+  margin-top: 27px;
+  margin-bottom: 15px;
+}
+
+.modalWind__headerLine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #fe7a36, #fc8a4d);
+  animation: headerLineAnimation 6s linear infinite alternate;
+}
+
+@keyframes headerLineAnimation {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.error {
+  font-family: Roboto;
+  font-size: 16px;
+  color: var(--form-error-validation);
+  display: block;
+  position: absolute;
+  margin-top: -38px !important;
+}
+
+.formDropdown {
+  font-family: Roboto;
+  font-size: 20px;
+  max-width: 612px;
+  width: 100%;
+  height: 38px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #737b7d;
+  outline: none;
+  margin-bottom: 40px !important;
+  cursor: pointer;
+  color: var(--text-black-color);
+}
+
+.dropdownError {
+  font-family: Roboto;
+  font-size: 16px;
+  color: var(--form-error-validation);
+  display: block;
+  position: absolute;
+  margin-top: -38px !important;
+}
+
+// CheckboxComponent.module.scss
+.checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--title-black-color);
+  }
+}
+
+.checkboxLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.checkboxView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border: 1px solid #b7b7b7;
+  background: var(--bg-white-color);
+  margin-right: 10px !important;
+}
+
+.checkboxIcon {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.checkbox:checked + .checkboxView .checkboxIcon {
+  opacity: 1;
+}
+
+// disabled btn
+.btnDisabled {
+  color: var(--text-black-color);
+  background: var(--disabled-color);
+  &:hover {
+    background: var(--disabled-color);
+  }
+  &:hover .arrow {
+    margin-left: 0 !important;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.placeholder {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 1px;
+  padding-left: 10px;
+  color: var(--text-black-color);
+  background: #fff;
+}
+
+.dateInput {
+  position: relative;
+  &:hover .dateClue {
+    opacity: 1;
+  }
+}
+
+.selectedOption {
+  display: none;
+}
+
+@media (max-width: 778px) {
+  .modalBox {
+    width: 546px;
+  }
+}
+
+@media (max-width: 541px) {
+  .modalBox {
+    width: 460px;
+  }
+}
+
+@media (max-width: 431px) {
+  .modalBox {
+    width: 360px;
+  }
+}
+
+@media (max-width: 376px) {
+  .modalBox {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modalBox {
+    width: 295px;
+  }
+}

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../UI//Typography/fonts/Roboto/Roboto-Light.ttf');
+}
+
+.programsPdf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  margin: 0 0 120px;
+  @media (max-width: 800px) {
+    margin: 20px 0 80px;
+  }
+}
+
+.programsSLiderHeader {
+  padding-top: 50px;
+  color: var(--title-black-color);
+}
+
+.programsSecondHeader {
+  margin-bottom: 40px;
+  color: var(--title-black-color);
+}
+
+.programsTitle {
+  margin-bottom: 40px;
+  color: var(--title-black-color);
+}
+
+.programsDescription {
+  font-family: 'Roboto';
+  color: var(--text-black-color);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 1.32px;
+  margin-bottom: 40px;
+  ol,li {
+    margin-left: 15px;
+  }
+  ul {
+    margin-left: 10px;
+  }
+}
+
+.programsLastTitle {
+  max-width: 1130px;
+  width: 100%;
+  margin-bottom: 60px;
+  &__title {
+    color: var(--text-black-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1.44px;
+  }
+}
+@media (max-width: 912px) {
+  .programs { 
+    .programsSLiderHeader {
+      font-size: 32px ;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .programs {
+    max-width: 100%;
+    height: auto;
+
+    .programsSLiderHeader {
+      font-size: 32px;
+    }
+
+    .programsSecondHeader {
+      font-size: 32px;
+      font-weight: 800;
+    }
+    .programsTitle {
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .programsDescription {
+      span {
+        font-size: 20px;
+      }
+      ol,li {
+        margin-left: 12px;
+      }
+      ul {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .programs {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    .programsSLiderHeader {
+      font-size: 20px;
+      margin: 10px 0 0px 0px;
+      width: 100%;
+
+    }
+    .container {
+      max-width: 100%;
+      margin: 15px 0 0px 6px;
+      .programsSecondHeader {
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+        letter-spacing: 0.4px;
+      }
+      .programsTitle {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+      }
+      .programsDescription {
+        width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.48px;
+        margin-top: -20px;
+      }
+      .programsLastTitle {
+        width: 100%;
+        &__title {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+
+  .programsSLiderHeader {
+    margin: 10px 0 20px 30px;
+    font-size: 20px;
+  }
+}

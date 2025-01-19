@@ -1,0 +1,41 @@
+.breadcrumbsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  padding-top: 30px;
+  margin: 0;
+  @media (max-width: 840px) {
+    display: none;
+  }
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1.5px;
+      bottom: -3px;
+      left: 50%;
+      background-color: var(--bg-orange-color);
+      visibility: hidden;
+      transition: all 0.2s ease-in-out;
+      transform: translateX(-50%);
+    }
+    &:hover::after {
+      visibility: visible;
+      width: 100%;
+    }
+}
+
+.currentPage, .pageId {
+  cursor: default;
+}
+
+.separator {
+  margin: 0 8px;
+}

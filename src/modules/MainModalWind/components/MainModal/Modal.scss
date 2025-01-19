@@ -1,0 +1,51 @@
+.formDropdownTitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  padding: 10px !important;
+  border-bottom: 1px solid var(--bg-orange-color);
+}
+
+.formBg.light {
+  background: var(--bg-white-color);
+}
+.formBg.dark {
+  background: #1c1c1c;
+}
+
+.inputBg.dark {
+  color: var(--text-white-color) !important;
+  background: none;
+}
+
+input.dark {
+  ::placeholder {
+    color: var(--text-black-color);
+  }
+}
+
+.dropdownBg.dark {
+  background: none;
+}
+
+.dark option {
+  background: #1c1c1c;
+}
+
+.checkboxTheme.dark {
+  background: #1c1c1c;
+  border: 1px solid #666;
+}
+
+.lineTheme.dark {
+  background: #666;
+}
+
+.dateTheme.dark {
+  background: #1c1c1c;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+  background: none !important;
+}

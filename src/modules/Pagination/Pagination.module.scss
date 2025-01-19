@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  &Btns {
+    max-width: 53px;
+    width: 100%;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,12 @@
+.calendar {
+  width: 24px;
+  height: 24px;
+}
+
+.calendar.light {
+  background-image: url('../../assets/icons/calendar.svg');
+}
+
+.calendar.dark {
+  background-image: url('../../assets/icons/darkThemeDate.svg');
+}

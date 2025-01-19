@@ -1,0 +1,81 @@
+.modalBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalWIndBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 712px;
+  max-height: calc(100vh - 120px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: var(--bg-white-color);
+  &__closeIcon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+  &__acceptEllipse {
+    margin-bottom: 20px !important;
+  }
+  &__header {
+    font-family: Roboto;
+    max-width: 341px;
+    width: 100%;
+    margin-bottom: 18px !important;
+    color: var(--title-black-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+    background: var(--bg-orange-color);
+    border-radius: 12px;
+    padding: 15px 20px !important;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 778px) {
+  .modalWIndBg {
+    width: 486px;
+  }
+}
+
+@media (max-width: 431px) {
+  .modalWIndBg {
+    width: 360px;
+  }
+}
+
+@media (max-width: 376px) {
+  .modalWIndBg {
+    width: 290px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modalWIndBg {
+    width: 260px;
+  }
+}

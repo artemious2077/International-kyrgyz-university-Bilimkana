@@ -1,0 +1,137 @@
+.students {
+  &Card {
+    width: 360px;
+    height: 400px;
+    display: flex;
+    @media (max-width: 840px) {
+      width: 190px;
+      height: 310px;
+    }
+    @media (max-width: 540px) {
+      width: 220px;
+      height: 100%;
+      flex-direction: column;
+    }
+    &Arrow {
+      border-radius: 0px 8px 8px 0px;
+      box-shadow: -0.5px 0 0 0.5px rgba(73, 109, 161, 0.5);
+      width: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--bg-blue-color);
+      @media (max-width: 840px) {
+        width: 25px;
+      }
+      @media (max-width: 540px) {
+        height: 25px;
+        width: 100%;
+        border-radius: 0px 0px 8px 8px;
+      }
+    }
+  }  
+  &Image {
+    width: 325px;
+    height: 400px;
+    border-radius: 8px 0px 0px 8px;
+    overflow: hidden;
+    @media (max-width: 840px) {
+      width: 170px;
+      height: 310px;
+    }
+    @media (max-width: 540px) {
+      width: 220px;
+      height: 190px;
+      border-radius: 8px 8px 0px 0px;
+    }
+    img {
+      user-select: none;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &Description {
+    user-select: none;
+    width: 600px;
+    padding: 50px 56px;
+    background-color: var(--bg-blue-color);
+    color: var(--text-white-color);
+    @media (max-width: 840px) {
+      width: 400px;
+      font-size: 16px;
+      padding: 20px;
+    }
+    @media (max-width: 540px) {
+      width: 100%;
+      font-size: 14px;
+      padding: 15px;
+    }
+    ul,ol,li {
+      margin-left: 12px;
+    }
+  }
+}
+
+.animateDesc {
+  animation: animateDesc 0.3s ease-out;
+}
+
+.animateMobile {
+  animation: animateMobile 0.5s ease-out;
+}
+
+@keyframes animateDesc {
+  0% {
+    width: 0;
+    background-color: #fff;
+    opacity: 0;
+  }
+  100% {
+    background-color: var(--bg-blue-color);
+    opacity: 1;
+  }
+}
+
+@keyframes animateMobile {
+  0% {
+    height: 0;
+    background-color: #fff;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    background-color: var(--bg-blue-color);
+    opacity: 1;
+  }
+}
+
+
+
+.openCard {
+  width: 960px;
+  @media (max-width: 840px) {
+    width: 800px;
+  }
+  @media (max-width: 540px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.arrowOpen {
+  transform: rotate(180deg); 
+  transition: transform 0.5s ease; 
+  @media (max-width: 540px) {
+    transform: rotate(-90deg);
+  }
+}
+
+.arrowClose {
+  transform: rotate(0deg); 
+  transition: transform 0.5s ease; 
+  @media (max-width: 540px) {
+    transform: rotate(90deg);
+  }
+}

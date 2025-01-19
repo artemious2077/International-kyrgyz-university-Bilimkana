@@ -1,0 +1,18 @@
+.customDot {
+  width: 15px;
+  height: 15px;
+  background: var(--bg-white-color);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  margin-top: 4px !important;
+}
+
+.activeDot {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: var(--bg-orange-color);
+  margin-top: 1.5px !important;
+}

@@ -1,0 +1,119 @@
+.internshipStatic {
+  padding-bottom: 120px;
+  @media (max-width: 840px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 430px) {
+    padding-bottom: 30px;
+  }
+}
+.internshipTitle {
+  text-align: center;
+  color: var(--title-black-color);
+  margin-bottom: 40px;
+   @media (max-width: 730px) {
+    text-align: left;
+  }
+}
+
+.internshipSteps {
+  display: flex;
+  width: 1092px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 24px;
+  @media (max-width: 1130px) {
+    gap: 40px;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+.step {
+  width: 520px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  @media (max-width: 1130px) {
+    width: 400px;
+  }
+  @media (max-width: 903px) {
+    width: 320px;
+  }
+  @media (max-width: 730px) {
+    width: 100%;
+  }
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 2px;
+  height: 100%;
+  background-color: #f47a21;
+  z-index: 1;
+}
+
+.iconContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #f47a21;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}
+
+.textContainer {
+  margin-left: 45px ;
+  width: 494px;
+  @media (max-width: 730px) {
+    width: 100%;
+  }
+  &Title {
+    margin-bottom: 12px;
+    @media (max-width: 1119px) {
+      height: 47px;
+    }
+    @media (max-width: 800px) {
+      height: 40px;
+    }
+     @media (max-width: 730px) {
+      height: auto;
+      font-size: 18px;
+    }
+  }
+  &Description {
+    text-align: justify;
+    color: var(--text-black-color);
+    font-size: 22px;
+    letter-spacing: 4%;
+    line-height: 32px;
+    @media (max-width: 840px) {
+      text-align: left;
+      line-height: 25px;
+      font-size: 18px;
+    }
+    ul,
+    ol,
+    li {
+      margin-left: 13px;
+    }
+  }
+}

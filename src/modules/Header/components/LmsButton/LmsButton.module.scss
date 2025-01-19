@@ -1,0 +1,19 @@
+.lmsLink {
+  display: inline-block;
+  @media (max-width: 430px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.lmsBtn {
+  width: 128px;
+  height: 44px;
+  @media (max-width: 1080px) {
+    width: 335px;
+    color: var(--text-black-color) !important;
+  }
+  @media (max-width: 430px) {
+    width: 100%;
+  }
+}

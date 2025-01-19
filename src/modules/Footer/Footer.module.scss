@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--bg-blue-color);
+  padding: 61px 0;
+  margin-top: 100px;
+  @media (max-width: 600px) {
+    padding: 30px 0;
+    margin-top: 40px;
+  }
+  &Content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-bottom: 130px;
+      gap:30px;
+    }
+  }
+}
+
+.socialFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    margin-right: auto;
+  }
+  &Title {
+    margin-bottom: 15px;
+    color: var(--text-white-color);
+    @media (max-width: 932px) {
+      font-size: 20px;
+    }
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+  }
+  &Networks {
+    @media (max-width: 600px) {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

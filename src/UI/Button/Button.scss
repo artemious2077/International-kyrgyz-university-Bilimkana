@@ -1,0 +1,81 @@
+.customButton {
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 12px ;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--text-black-color);
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--bg-orange-color);
+  transition: 0.2s;
+  @media (max-width: 768px) {
+    border-radius: 8px;
+  }
+  &:hover > .arrow {
+    margin-left: 18px !important;
+  }
+  &:hover {
+    background: var(--bg-lightOrange-color);
+  }
+
+  &.outlinedOrange {
+    background-color: transparent;
+    color: var(--text-white-color);
+    border-radius: 8px;
+    border: 2px solid var(--bg-orange-color);
+    &:hover {
+      color: var(--text-black-color);
+      border: 2px solid var(--bg-lightOrange-color);
+    }
+  }
+
+  &.outlinedGrey {
+    background-color: transparent;
+    border-color: var(--outline-grey-color);
+    color: var(--text-black-color);
+  }
+
+  &.grey {
+    background-color: #d9d9d9;
+  }
+
+  &.orange {
+    background-color: var(--bg-orange-color);
+  }
+
+  &.lightOrange {
+    background-color: #fe955e;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background: var(--disabled-color);
+  }
+}
+.noStyles {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    background: none;
+  }
+}
+.arrow {
+  transition: 0.2s;
+}
+
+.white {
+  color: var(--text-white-color) !important;
+}
+
+.black {
+  color: var(--text-black-color) !important;
+}

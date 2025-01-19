@@ -1,0 +1,90 @@
+.wrapper {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.ourTeachers {
+  @media (max-width: 440px) {
+    padding-right: 0;
+  }
+}
+
+.teachersHeader {
+  font-size: 36px;
+  color: var(--title-black-color);
+  margin-bottom: 20px;
+}
+
+.teachersContainer {
+  display: flex;
+}
+.teachersSlider {
+  width: 1120px;
+  height: auto;
+  @media (max-width: 1279px) {
+    width: 100%;
+  }
+}
+
+.teachersSlider :global(.slick-track) {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+}
+
+.arrow {
+  margin-top: 270px;
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: var(--bg-orange-color);
+  cursor: pointer;
+  transition: 0.2s;
+  @media (max-width: 530px) {
+    display: none;
+  }
+  &:hover {
+    background: var(--bg-lightOrange-color);
+  }
+  &:hover .slide {
+    transition: 0.4s;
+  }
+  &:last-child {
+    @media (max-width: 1279px) {
+      margin-left: 27px;
+    }
+    @media (max-width: 840px) {
+      margin-left: 10px;
+    }
+    @media (max-width: 798px) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.disabledArrow {
+  background: var(--disabled-color);
+  pointer-events: none;
+}
+
+.teachersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .teachersHeader {
+    font-size: 24px;
+  }
+}

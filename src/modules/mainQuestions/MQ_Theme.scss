@@ -1,0 +1,17 @@
+.arrow {
+  width: 36px;
+  height: 36px;
+  transition: 0s !important;
+}
+
+.arrow.dark {
+  width: 36px;
+  height: 36px;
+  background-image: url('../../assets/icons/darkArrow.svg');
+}
+
+.arrow.light {
+  width: 36px;
+  height: 36px;
+  background-image: url('../../assets/icons/arrow-down.svg');
+}

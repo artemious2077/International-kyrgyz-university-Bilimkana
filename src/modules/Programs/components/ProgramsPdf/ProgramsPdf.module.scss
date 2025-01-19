@@ -1,0 +1,24 @@
+.pdf {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 112px;
+  &Content {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 67px);
+    background-color: var(--bg-blue-color);
+    color: var(--text-white-color);
+    padding: 20px;
+    @media (max-width: 430px) {
+      padding: 10px;
+    }
+  }
+  &Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-orange-color);
+    width: 67px;
+  }
+}

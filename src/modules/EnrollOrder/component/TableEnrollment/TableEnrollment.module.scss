@@ -1,0 +1,76 @@
+.table {
+  display: none;
+}
+
+.testTable {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  &__section {
+    display: flex;
+  }
+}
+
+.tableSection {
+  width: 193px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.314px;
+  border: 1px solid var(--border-black-color);
+  padding: 18px 20px 18px 18px !important;
+}
+
+.testTable__section {
+  ul {
+    li {
+      margin-left: 10px;
+      text-align: left;
+    }
+  }
+}
+
+.tableSectionIn {
+  width: 193px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.314px;
+  border: 1px solid var(--border-black-color);
+  border-top: none;
+  padding: 18px 20px 18px 18px !important;
+}
+
+.tableSectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.56px;
+  border: 1px solid var(--border-black-color);
+  border-left: none;
+  padding: 18px 18px 18px 18px !important;
+}
+
+.tableSectionDescription {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.34px;
+  border: 1px solid var(--border-black-color);
+  border-top: none;
+  border-left: none;
+  padding: 18px 18px 18px 18px !important;
+}
+
+@media (min-width: 769px) {
+  .table  {
+    display: block;
+  }
+}
