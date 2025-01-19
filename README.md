@@ -3,11 +3,11 @@
 Данный сайт может быть на данный момент неактивен из-за недостроенного университета на данный момент. Данное предупреждение тоже может быть в истёкшем сроке, поэтому, для подробной информации можете связаться с владельцем сайта:
 
 "Bilimkana International High School"
-Директор: Пак Татьяна Петровна
-Hoмep: +996 (770) 11 00 19
-Hoмep: +996 (552) 44 26 03
-Email: highschool@bilimkana.kg
-Instagram: @bilimkana_highschool_kg
+- Директор: Пак Татьяна Петровна
+- Hoмep: +996 (770) 11 00 19
+- Hoмep: +996 (552) 44 26 03
+- Email: highschool@bilimkana.kg
+- Instagram: @bilimkana_highschool_kg
 
 ![Снимок экрана 2025-01-19 214655](https://github.com/user-attachments/assets/296bd380-353b-4bb6-9e2b-945595b0c70a)
 
@@ -37,9 +37,9 @@ Instagram: @bilimkana_highschool_kg
 
 - Backend: Python, Django-Jazzmin, Spring Boot, Python.
 
-### For developers
+### Для разработчиков
 
-Currently, two official plugins are available:
+В настоящее время проект использует следующие плагины:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) используя [Babel](https://babeljs.io/) для быстрого обновления.
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) используя [SWC](https://swc.rs/) для быстрого обновления тоже.
