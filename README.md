@@ -7,7 +7,8 @@
 - Hoмep: +996 (770) 11 00 19
 - Hoмep: +996 (552) 44 26 03
 - Email: highschool@bilimkana.kg
-- Instagram: @bilimkana_highschool_kg
+
+vercel: [Bilimkana](https://gitlab.geeks.kg/go-project/go-project_frontend.git)
 
 ![Снимок экрана 2025-01-19 214655](https://github.com/user-attachments/assets/296bd380-353b-4bb6-9e2b-945595b0c70a)
 
